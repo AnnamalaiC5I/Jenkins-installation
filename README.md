@@ -30,20 +30,7 @@ To confirm its status, use:
 ```bash
 sudo systemctl status jenkins
 ```
-With Jenkins installed, we can proceed with adjusting the firewall settings. By default, Jenkins will run on port 8080.
-
-In order to ensure that this port is accessible, we will need to configure the built-in Ubuntu firewall (ufw). To open the 8080 port and enable the firewall, use the following commands:
-```bash
-sudo ufw allow 8080
-```
-```bash
-sudo ufw enable
-```
-Once done, test whether the firewall is active using this command:
-```bash
-sudo ufw status
-```
-With the firewall configured, it’s time to set up Jenkins itself. Type in the IP of your EC2 along with the port number. The Jenkins setup wizard will open.
+By default, Jenkins will run on port 8080.
 
 To check the initial password, use the cat command as indicated below:
 ```bash
